@@ -18,15 +18,15 @@ export const App: React.FC = () => {
 						<Routes>
 							<Route path="/" element={<DashboardContainer />} />
 							{/* <Route path="/team" element={<DashboardContainer />} /> */}
-							{/* <Route path="/contacts" element={<DashboardContainer />} /> */}
-							{/* <Route path="/invoices" element={<DashboardContainer />} /> */}
-							{/* <Route path="/form" element={<DashboardContainer />} /> */}
-							{/* <Route path="/bar" element={<DashboardContainer />} /> */}
-							{/* <Route path="/pie" element={<DashboardContainer />} /> */}
-							{/* <Route path="/line" element={<DashboardContainer />} /> */}
-							{/* <Route path="/faq" element={<DashboardContainer />} /> */}
-							{/* <Route path="/geography" element={<DashboardContainer />} /> */}
-							{/* <Route path="/calender" element={<DashboardContainer />} /> */}
+							{/* <Route path="/contacts" element={<ContactsContainer />} /> */}
+							{/* <Route path="/invoices" element={<InvoicesContainer />} /> */}
+							{/* <Route path="/form" element={<FormContainer />} /> */}
+							{/* <Route path="/bar" element={<BarContainer />} /> */}
+							{/* <Route path="/pie" element={<PieContainer />} /> */}
+							{/* <Route path="/line" element={<LineContainer />} /> */}
+							{/* <Route path="/faq" element={<FaqContainer />} /> */}
+							{/* <Route path="/geography" element={<GeographyContainer />} /> */}
+							{/* <Route path="/calender" element={<CalenderContainer />} /> */}
 						</Routes>
 					</main>
 				</div>
