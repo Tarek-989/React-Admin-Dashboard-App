@@ -7,6 +7,7 @@ import { DashboardContainer } from "./pages/dashboard/DashboardContainer";
 import { TeamContainer } from "./pages/team/TeamContainer";
 import { ContactsContainer } from "./pages/contacts/ContactsContainer";
 import { InvoicesContainer } from "./pages/invoices/InvoicesContainer";
+import { FormContainer } from "./pages/form/FormContainer";
 
 export const App: React.FC = () => {
 	const [theme, colorMode] = useMode();
@@ -23,7 +24,7 @@ export const App: React.FC = () => {
 							<Route path="/team" element={<TeamContainer />} />
 							<Route path="/contacts" element={<ContactsContainer />} />
 							<Route path="/invoices" element={<InvoicesContainer />} />
-							{/* <Route path="/form" element={<FormContainer />} /> */}
+							<Route path="/form" element={<FormContainer />} />
 							{/* <Route path="/bar" element={<BarContainer />} /> */}
 							{/* <Route path="/pie" element={<PieContainer />} /> */}
 							{/* <Route path="/line" element={<LineContainer />} /> */}
