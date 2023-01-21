@@ -9,6 +9,7 @@ import { ContactsContainer } from "./pages/contacts/ContactsContainer";
 import { InvoicesContainer } from "./pages/invoices/InvoicesContainer";
 import { FormContainer } from "./pages/form/FormContainer";
 import { CalendarContainer } from "./pages/calendar/CalendarContainer";
+import { FaqContainer } from "./pages/faq/FaqContainer";
 
 export const App: React.FC = () => {
 	const [theme, colorMode] = useMode();
@@ -27,10 +28,10 @@ export const App: React.FC = () => {
 							<Route path="/invoices" element={<InvoicesContainer />} />
 							<Route path="/form" element={<FormContainer />} />
 							<Route path="/calendar" element={<CalendarContainer />} />
+							<Route path="/faq" element={<FaqContainer />} />
 							{/* <Route path="/bar" element={<BarContainer />} /> */}
 							{/* <Route path="/pie" element={<PieContainer />} /> */}
 							{/* <Route path="/line" element={<LineContainer />} /> */}
-							{/* <Route path="/faq" element={<FaqContainer />} /> */}
 							{/* <Route path="/geography" element={<GeographyContainer />} /> */}
 						</Routes>
 					</main>
