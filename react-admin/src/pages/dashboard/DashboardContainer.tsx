@@ -1,9 +1,13 @@
 import React from 'react';
+import { Box } from '@mui/material';
+import { Header } from '../../components';
 
 export const DashboardContainer: React.FC = () => {
 	return (
-		<>
-			DashboardContainer
-		</>
+		<Box m={1.25}>
+			<Box display={'flex'} justifyContent={'space-between'} alignItems={'center'}>
+				<Header title={'DASHBOURD'} subTilte={'Welcome to your dashbourd'} />
+			</Box>
+		</Box>
 	);
 };
