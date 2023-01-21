@@ -4,6 +4,7 @@ import { CssBaseline, Theme, ThemeProvider } from "@mui/material";
 import { SideBar, TopBar } from "./pages/global";
 import { Route, Routes } from "react-router-dom";
 import { DashboardContainer } from "./pages/dashboard/DashboardContainer";
+import { TeamContainer } from "./pages/team/TeamContainer";
 
 export const App: React.FC = () => {
 	const [theme, colorMode] = useMode();
@@ -17,9 +18,9 @@ export const App: React.FC = () => {
 						<TopBar />
 						<Routes>
 							<Route path="/" element={<DashboardContainer />} />
-							{/* <Route path="/team" element={<DashboardContainer />} /> */}
 							{/* <Route path="/contacts" element={<ContactsContainer />} /> */}
 							{/* <Route path="/invoices" element={<InvoicesContainer />} /> */}
+							<Route path="/team" element={<TeamContainer />} />
 							{/* <Route path="/form" element={<FormContainer />} /> */}
 							{/* <Route path="/bar" element={<BarContainer />} /> */}
 							{/* <Route path="/pie" element={<PieContainer />} /> */}
