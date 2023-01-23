@@ -1,6 +1,6 @@
 import React from "react";
 import { ColorModeContext, useMode } from "./theme";
-import { CssBaseline, Theme, ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, Theme, ThemeProvider } from "@mui/material";
 import { SideBar, TopBar } from "./pages/global";
 import { Route, Routes } from "react-router-dom";
 import { DashboardContainer } from "./pages/dashboard/DashboardContainer";
@@ -19,9 +19,9 @@ export const App: React.FC = () => {
 		<ColorModeContext.Provider value={colorMode as { toggleColorMode: () => void; }}>
 			<ThemeProvider theme={theme as Theme}>
 				<CssBaseline />
-				<div className="app">
+				<Box className="app">
 					<SideBar />
-					<main className="content">
+					<Box className="content">
 						<TopBar />
 						<Routes>
 							<Route path="/" element={<DashboardContainer />} />
@@ -36,8 +36,8 @@ export const App: React.FC = () => {
 							{/* <Route path="/line" element={<LineContainer />} /> */}
 							{/* <Route path="/geography" element={<GeographyContainer />} /> */}
 						</Routes>
-					</main>
-				</div>
+					</Box>
+				</Box>
 			</ThemeProvider>
 		</ColorModeContext.Provider>
 	);

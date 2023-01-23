@@ -91,13 +91,13 @@ export const SideBar: React.FC = () => {
 									fontWeight='bold'
 									mt={0.625}
 								>
-									Ed Roh
+									Tk Ad
 								</Typography>
 								<Typography
 									variant='h5'
 									color={colors.greenAccent[500]}
 								>
-									VP Facy Admin
+									Admin
 								</Typography>
 							</Box>
 						</Box>
