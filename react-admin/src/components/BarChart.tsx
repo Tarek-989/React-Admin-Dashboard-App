@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from "@mui/material";
+import { Typography, useTheme } from "@mui/material";
 import { ResponsiveBar } from "@nivo/bar";
 import { tokens } from "../theme";
 import { mockBarData as data } from "../data/mockData";
@@ -8,6 +8,10 @@ export const BarChart: React.FC<TBarChart> = ({ isDashboard = false }) => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
 	return (
+		<>
+		<Typography color={colors.redAccent[500]} >
+			Simple Bar Chart But the Library is Not Compatible with React 18.2.0
+		</Typography>
 		<ResponsiveBar
 			data={data}
 			theme={{
@@ -124,6 +128,7 @@ export const BarChart: React.FC<TBarChart> = ({ isDashboard = false }) => {
 				return e.id + ": " + e.formattedValue + " in country: " + e.indexValue;
 			}}
 		/>
+		</>
 	);
 };
 
