@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import { Header } from '../../components';
-import { LineChart } from '../../components/LineChart';
+import { Header, LineChart } from '../../components';
 
 export const LineContainer: React.FC = () => {
 	return (

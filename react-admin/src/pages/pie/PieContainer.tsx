@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import { Header } from '../../components';
-import { PieChart } from '../../components/PieChart';
+import { Header, PieChart } from '../../components';
 
 export const PieContainer: React.FC = () => {
 	return (
