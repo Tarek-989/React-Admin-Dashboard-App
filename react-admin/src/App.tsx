@@ -13,6 +13,7 @@ import { FaqContainer } from "./pages/faq/FaqContainer";
 import { BarContainer } from "./pages/bar/BarContainer";
 import { PieContainer } from "./pages/pie/PieContainer";
 import { LineContainer } from "./pages/line/LineContainer";
+import { GeographyContainer } from "./pages/geography/GeographyContainer";
 
 export const App: React.FC = () => {
 	const [theme, colorMode] = useMode();
@@ -35,7 +36,7 @@ export const App: React.FC = () => {
 							<Route path="/bar" element={<BarContainer />} />
 							<Route path="/pie" element={<PieContainer />} />
 							<Route path="/line" element={<LineContainer />} />
-							{/* <Route path="/geography" element={<GeographyContainer />} /> */}
+							<Route path="/geography" element={<GeographyContainer />} />
 						</Routes>
 					</Box>
 				</Box>
