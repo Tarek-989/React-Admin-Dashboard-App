@@ -1,8 +1,7 @@
 import React from 'react';
-import { Box, Button, TextField } from '@mui/material';
+import { Box, Button, TextField, useMediaQuery } from '@mui/material';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-import { useMediaQuery } from '@mui/material';
 import { Header } from '../../components';
 
 const initialValues = {
@@ -13,7 +12,7 @@ const initialValues = {
 	address1: '',
 	address2: '',
 }
-const phoneRegExp = /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
+const phoneRegExp = /^((\+[1-9]{1,4}[ -]?)|(\(\d{2,3}\)[ -]?)|(\d{2,4})[ -]?)*?\d{3,4}[ -]?\d{3,4}$/;
 const userSchema = yup.object().shape({
 	firstName: yup.string().required('required'),
 	lastName: yup.string().required('required'),
