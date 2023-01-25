@@ -26,7 +26,7 @@ export const SideBar: React.FC = () => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
 	const [isCollapsed, setIsCollapsed] = useState(false);
-	const [selected, setSelected] = useState('Dashbourd');
+	const [selected, setSelected] = useState('Dashboard');
 
 	return (
 		<Box sx={{
@@ -104,7 +104,7 @@ export const SideBar: React.FC = () => {
 					)}
 					<Box pl={isCollapsed ? undefined : '10%'}>
 						<Item
-							title='Dashbourd'
+							title='Dashboard'
 							to='/'
 							icon={<HomeOutlined />}
 							selected={selected}
@@ -195,8 +195,8 @@ export const SideBar: React.FC = () => {
 							setSelected={setSelected}
 						/>
 						<Item
-							title='Geograpgy Chart'
-							to='/geograpgy'
+							title='Geography Chart'
+							to='/geography'
 							icon={<MapOutlined />}
 							selected={selected}
 							setSelected={setSelected}

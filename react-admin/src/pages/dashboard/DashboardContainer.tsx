@@ -6,7 +6,7 @@ export const DashboardContainer: React.FC = () => {
 	return (
 		<Box m={1.25}>
 			<Box display={'flex'} justifyContent={'space-between'} alignItems={'center'}>
-				<Header title={'DASHBOURD'} subTitle={'Welcome to your dashbourd'} />
+				<Header title={'DASHBOARD'} subTitle={'Welcome to your dashboard'} />
 			</Box>
 		</Box>
 	);
