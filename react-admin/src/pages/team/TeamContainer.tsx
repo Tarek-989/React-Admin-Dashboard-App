@@ -63,7 +63,7 @@ export const TeamContainer: React.FC = () => {
 	], [colors]);
 	return (
 		<Box m={1.25}>
-			<Header title='TEAM' subTilte='Managing the Team Member' />
+			<Header title='TEAM' subTitle='Managing the Team Member' />
 			<Box
 				mt={2.5}
 				height={'75vh'}

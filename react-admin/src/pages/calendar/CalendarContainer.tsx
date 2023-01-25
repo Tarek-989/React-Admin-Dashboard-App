@@ -43,7 +43,7 @@ export const CalendarContainer: React.FC = () => {
 	}
 	return (
 		<Box m={1.25}>
-			<Header title='CALENDAR' subTilte='Full Calendar Interative Page' />
+			<Header title='CALENDAR' subTitle='Full Calendar Interactive Page' />
 			<Box display={'flex'} justifyContent={'space-between'}>
 				{/* calendar sidebar */}
 				<Box

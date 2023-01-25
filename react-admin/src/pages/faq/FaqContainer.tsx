@@ -9,7 +9,7 @@ export const FaqContainer: React.FC = () => {
 	const colors = tokens(theme.palette.mode);
 	return (
 		<Box m={1.25}>
-			<Header title='FAQ' subTilte='Frequently Asked Quastions Page' />
+			<Header title='FAQ' subTitle='Frequently Asked Quastions Page' />
 			<Box display={'flex'} flexDirection={'column'} rowGap={1.5}>
 				<Accordion defaultExpanded>
 					<AccordionSummary expandIcon={<ExpandMore />} >

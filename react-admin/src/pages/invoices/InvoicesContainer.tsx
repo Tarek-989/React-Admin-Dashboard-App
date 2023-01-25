@@ -47,7 +47,7 @@ export const InvoicesContainer: React.FC = () => {
 	], [colors]);
 	return (
 		<Box m={1.25}>
-			<Header title='INVOICES' subTilte='List of Invoices Balances' />
+			<Header title='INVOICES' subTitle='List of Invoices Balances' />
 			<Box
 				mt={2.5}
 				height={'75vh'}

@@ -30,7 +30,7 @@ export const FormContainer: React.FC = () => {
 	};
 	return (
 		<Box m={1.25}>
-			<Header title='CREATE USER' subTilte='Create a New User Profile' />
+			<Header title='CREATE USER' subTitle='Create a New User Profile' />
 			<Formik
 				onSubmit={handleFormSubmit}
 				initialValues={initialValues}

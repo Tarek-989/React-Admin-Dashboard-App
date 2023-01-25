@@ -59,7 +59,7 @@ export const ContactsContainer: React.FC = () => {
 	], []);
 	return (
 		<Box m={1.25}>
-			<Header title='CONTACTS' subTilte='List of Contacts for Future Reference' />
+			<Header title='CONTACTS' subTitle='List of Contacts for Future Reference' />
 			<Box
 				mt={2.5}
 				height={'75vh'}

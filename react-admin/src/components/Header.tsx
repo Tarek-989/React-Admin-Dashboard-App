@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
 import { tokens } from '../theme';
-export const Header: React.FC<TProps> = ({ title, subTilte }) => {
+export const Header: React.FC<TProps> = ({ title, subTitle }) => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
 
@@ -19,7 +19,7 @@ export const Header: React.FC<TProps> = ({ title, subTilte }) => {
 				variant='h5'
 				color={colors.greenAccent[400]}
 			>
-				{subTilte}
+				{subTitle}
 			</Typography>
 		</Box>
 	);
@@ -27,5 +27,5 @@ export const Header: React.FC<TProps> = ({ title, subTilte }) => {
 
 type TProps = {
 	title: string;
-	subTilte: string;
+	subTitle: string;
 }
