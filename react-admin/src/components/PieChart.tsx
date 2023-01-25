@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, useTheme } from "@mui/material";
 // import { ResponsivePie } from '@nivo/pie';
 import { tokens } from "../theme";
-// import { mockBarData as data } from "../data/mockData";
+// import { mockPieData as data } from "../data/mockData";
 
 export const PieChart: React.FC = () => {
 	const theme = useTheme();
