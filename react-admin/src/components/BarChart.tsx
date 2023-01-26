@@ -133,5 +133,5 @@ export const BarChart: React.FC<TBarChart> = ({ isDashboard = false }) => {
 };
 
 type TBarChart = {
-	isDashboard: boolean;
+	isDashboard?: boolean;
 }

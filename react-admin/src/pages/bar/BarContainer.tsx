@@ -8,7 +8,7 @@ export const BarContainer: React.FC = () => {
 		<Box m={1.25}>
 			<Header title='BAR CHART' subTitle='Simple Bar Chart ' />
 			<Box height={'75vh'}>
-				<BarChart isDashboard={false} />
+				<BarChart />
 			</Box>
 		</Box>
 	);
