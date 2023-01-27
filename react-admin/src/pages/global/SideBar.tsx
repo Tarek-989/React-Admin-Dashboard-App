@@ -33,7 +33,7 @@ export const SideBar: React.FC = () => {
 			'& .pro-sidebar-inner': {
 				background: `${colors.primary[400]} !important`
 			},
-			'& .pro-icon-weapper': {
+			'& .pro-icon-wrapper': {
 				backgroundColor: 'transparent !important'
 			},
 			'& .pro-inner-item': {
@@ -102,6 +102,7 @@ export const SideBar: React.FC = () => {
 							</Box>
 						</Box>
 					)}
+					{/* Menu Items */}
 					<Box pl={isCollapsed ? undefined : '10%'}>
 						<Item
 							title='Dashboard'
