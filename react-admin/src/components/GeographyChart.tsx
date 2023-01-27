@@ -1,20 +1,16 @@
 import React from 'react';
 import { tokens } from "../theme";
-import { Box, Typography, useTheme } from "@mui/material";
-// import { ResponsiveChoropleth } from '@nivo/geo';
-// import { geoFeatures } from '../data/mockGeoFeature';
-// import { mockGeographyData as data } from "../data/mockData";
+import { useTheme } from "@mui/material";
+import { ResponsiveChoropleth } from '@nivo/geo';
+import { geoFeatures } from '../data/mockGeoFeature';
+import { mockGeographyData as data } from "../data/mockData";
 
 export const GeographyChart: React.FC<TGeographyChart> = ({ isDashboard = false }) => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
 	return (
 		<>
-			<Typography color={colors.redAccent[500]} >
-				Simple Geography Chart But the Library is Not Compatible with React 18.2.0
-			</Typography>
-			<Box border={`0.063rem solid ${colors.gray[100]}`} borderRadius={'0.25rem'}>
-				{/* <ResponsiveChoropleth
+			<ResponsiveChoropleth
 				data={data}
 				features={geoFeatures.features}
 				theme={{
@@ -80,8 +76,7 @@ export const GeographyChart: React.FC<TGeographyChart> = ({ isDashboard = false 
 						]
 					}
 				]}
-			/> */}
-			</Box>
+			/>
 		</>
 	);
 };

@@ -1,18 +1,15 @@
 import React from 'react';
-import { Typography, useTheme } from "@mui/material";
-// import { ResponsiveLine } from '@nivo/line';
+import { useTheme } from "@mui/material";
+import { ResponsiveLine } from '@nivo/line';
 import { tokens } from "../theme";
-// import { mockLineData as data } from "../data/mockData";
+import { mockLineData as data } from "../data/mockData";
 
 export const LineChart: React.FC<TLineChart> = ({ isDashboard = false }) => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
 	return (
 		<>
-			<Typography color={colors.redAccent[500]} >
-				Simple Line Chart But the Library is Not Compatible with React 18.2.0
-			</Typography>
-			{/* <ResponsiveLine
+			<ResponsiveLine
 				data={data}
 				theme={{
 					axis: {
@@ -62,7 +59,7 @@ export const LineChart: React.FC<TLineChart> = ({ isDashboard = false }) => {
 				axisTop={null}
 				axisRight={null}
 				axisBottom={{
-					orient: "bottom",
+					// orient: "bottom",
 					tickSize: 0,
 					tickPadding: 5,
 					tickRotation: 0,
@@ -71,7 +68,7 @@ export const LineChart: React.FC<TLineChart> = ({ isDashboard = false }) => {
 					legendPosition: "middle",
 				}}
 				axisLeft={{
-					orient: "left",
+					// orient: "left",
 					tickValues: 5, // added
 					tickSize: 3,
 					tickPadding: 5,
@@ -114,7 +111,7 @@ export const LineChart: React.FC<TLineChart> = ({ isDashboard = false }) => {
 						],
 					},
 				]}
-			/> */}
+			/> 
 		</>
 	);
 };

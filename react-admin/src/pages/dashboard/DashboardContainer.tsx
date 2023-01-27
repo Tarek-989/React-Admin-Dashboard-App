@@ -139,8 +139,7 @@ export const DashboardContainer: React.FC = () => {
 					</Box>
 					<Box
 						height={'15.625rem'}
-						mt={'2rem'}
-						ml={'2rem'}
+						mt={'-1.25rem'}
 					>
 						<LineChart isDashboard={true} />
 					</Box>
@@ -245,18 +244,17 @@ export const DashboardContainer: React.FC = () => {
 					gridColumn={'span 4'}
 					gridRow={'span 2'}
 					sx={{ backgroundColor: colors.primary[400] }}
-					p={'1.875rem'}
 				>
 					<Typography
 						variant='h5'
 						fontWeight={600}
-						sx={{ p: '1.875ream 1.875ream 0 1.875ream' }}
+						sx={{ p: '1.875rem 1.875rem 0 1.875rem' }}
 					>
 						Sales Quantity
 					</Typography>
 					<Box
 						height={'15.625rem'}
-						sx={{ mt: '1.563rem' }}
+						sx={{ mt: '-1.563rem' }}
 					>
 						<BarChart isDashboard={true} />
 					</Box>

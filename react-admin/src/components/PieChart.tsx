@@ -1,18 +1,15 @@
 import React from 'react';
-import { Typography, useTheme } from "@mui/material";
-// import { ResponsivePie } from '@nivo/pie';
+import { useTheme } from "@mui/material";
+import { ResponsivePie } from '@nivo/pie';
 import { tokens } from "../theme";
-// import { mockPieData as data } from "../data/mockData";
+import { mockPieData as data } from "../data/mockData";
 
 export const PieChart: React.FC = () => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
 	return (
 		<>
-			<Typography color={colors.redAccent[500]} >
-				Simple Pie Chart But the Library is Not Compatible with React 18.2.0
-			</Typography>
-			{/* <ResponsivePie
+			<ResponsivePie
 				data={data}
 				theme={{
 					axis: {
@@ -36,8 +33,8 @@ export const PieChart: React.FC = () => {
 							}
 						}
 					},
-					legends:{
-						text:{
+					legends: {
+						text: {
 							fill: colors.gray[100]
 						}
 					}
@@ -117,7 +114,7 @@ export const PieChart: React.FC = () => {
 						]
 					}
 				]}
-			/> */}
+			/>
 		</>
 	);
 };
